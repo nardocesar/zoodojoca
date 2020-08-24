@@ -11,16 +11,19 @@ const ListaDePresentesPage = () => {
                     <div className="caixaDaFoto">
                         <figure>
                             <img
-                                src="https://via.placeholder.com/100"
-                                alt="Nome do presente"
+                                src="fotosDosPresentes/banheirinha.jpg"
                             />
                         </figure>
                     </div>
                     <div className="caixaDoConteudo">
-                        <p>Item de Presente</p>
-                        <button className="botaoDarEsse">
-                            Deixa esse Comigo!
-                        </button>
+                        <div className="itemDePresente">
+                            <p class="nomeDoItem">Banheirinha</p>
+                            <p class="valorDoItem">Valor Aproximado: R$ 250,00</p>
+                           
+                        </div>
+                        <div className="areaBotao">
+                            <button className="botaoDarEsse">Deixa esse Comigo!</button>
+                        </div>  
                     </div>
                 </div>
             </main>

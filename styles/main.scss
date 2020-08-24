@@ -31,6 +31,13 @@ body {
     max-width: 770px;
 }
 
+.areaBotao {
+    display: flex;
+    align-items: center;
+    border: 0px
+
+}
+
 .button {
     display: block;
     width: 100%;
@@ -83,7 +90,7 @@ body {
 }
 
 .headerLista {
-    width: calc(100% - 60px); max-width: 1140px;
+    width: 100%; max-width: 1140px;
     padding: 0;
     margin: 0 auto;
     img {
@@ -112,21 +119,48 @@ body {
 
 }
 
+.caixaDoConteudo {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: calc(100% - 175px) 135px;
+    column-gap: 20px;
+    }
+
 .botaoDarEsse {
     width: 135px;
-    height: 28px;
+    height: 40px;
     display: block;
     border-radius: 5px;
     border: none;
-    background-color: #325c16;
+    background-color: #9CD277;
     margin: 0px auto;
     font-family: 'Amatic SC', cursive;
     text-align: center;
-    line-height: 50px;
+    line-height: 28px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    color: #8A7864;
+    font-size: 20px;
+    color: #4E3921;
+}
+
+.nomeDoItem {
+    font-family: 'Amatic SC', cursive;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px;
+    color: #4E3921;
+
+}
+
+.valorDoItem {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px;
+    color: #4E3921;
+
 }
 
 @media screen and (min-width: 992px) {
