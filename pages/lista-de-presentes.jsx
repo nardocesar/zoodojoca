@@ -4,7 +4,7 @@ const ListaDePresentesPage = () => {
     return (
         <>
             <figure className="headerLista">
-                <img src="header.png" alt="Header do site" />
+                <img src="header2.png" alt="Header do site" />
             </figure>
             <main className="container">
                 <div className="retanguloDoItem">
