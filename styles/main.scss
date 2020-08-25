@@ -1,203 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
-html, body {
-    margin: 0; padding: 0;
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background: url('../public/background.png') left top repeat #F7F4E3;
+	background: url("../public/background.png") left top repeat #f7f4e3;
 }
 
 .titulo {
-    font-family: 'Sacramento', cursive;
-    text-align: center;
-    font-size: 58px;
-    margin-top: 150px;
-    color: #8A7864;
-    font-weight: normal;
-    margin-bottom: 0;
+	font-family: "Sacramento", cursive;
+	text-align: center;
+	font-size: 58px;
+	margin-top: 150px;
+	color: #8a7864;
+	font-weight: normal;
+	margin-bottom: 0;
 }
 
 .loginBox {
-    width: calc(100% - 60px);
-    margin: 0 auto;
+	width: calc(100% - 60px);
+	margin: 0 auto;
 }
 
 .animaisEntrada {
-    display: block;
-    margin: 30px auto 20px auto;
-    width: 100%;
-    max-width: 770px;
+	display: block;
+	margin: 30px auto 20px auto;
+	width: 100%;
+	max-width: 770px;
 }
 
 .areaBotao {
-    display: flex;
-    align-items: center;
-    border: 0px
-
+	display: flex;
+	align-items: center;
+	border: 0px;
 }
 
 .button {
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    background-color: #9CD277;
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	background-color: #9cd277;
 
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
-    line-height: 40px;
-    font-weight: bold;
-    font-size: 20px;
-    color: #8A7864;
-    transition: all 200ms ease-out;
+	font-family: "Amatic SC", cursive;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #8a7864;
+	transition: all 200ms ease-out;
 }
 
 .button:hover {
-    transform: scale(1.05);
-    background-color: #559927;
-    color: #fff;
+	transform: scale(1.05);
+	background-color: #559927;
+	color: #fff;
 }
 
 .caixaSenha {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 40px;
 
-    padding: 5px;
+	padding: 5px;
 
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #fff;
+	margin-bottom: 20px;
 
-    font-family: 'Amatic SC', cursive;
-    text-align: left;
-    line-height: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: #8A7864;
+	font-family: "Amatic SC", cursive;
+	text-align: left;
+	line-height: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #8a7864;
 }
 
 /* PÁGINA LISTA DE PRESENTES */
 
 .container {
-    width: calc(100% - 60px); margin: 0 auto; max-width: 1140px;
+	width: calc(100% - 60px);
+	margin: 0 auto;
+	max-width: 1140px;
 }
 
 .headerLista {
-    width: 100%; max-width: 1140px;
-    padding: 0;
-    margin: 0 auto;
-    img {
-        width: 100%; height: auto;
-        max-width: 1140px;
-    }
+	width: 100%;
+	max-width: 1140px;
+	padding: 0;
+	margin: 0 auto;
+
+	img {
+		width: 100%;
+		height: auto;
+		max-width: 1140px;
+	}
 }
 
 .retanguloDoItem {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 80px calc(100% - 80px);
-    column-gap: 20px;
-    width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 12px;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 60px calc(100% - 60px);
+	column-gap: 20px;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 12px;
 
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 
-    &.expanded {
-        grid-template-columns: 160px calc(100% - 160px);
-    }
+	&.expanded {
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr;
+	}
 }
 
 .caixaDaFoto {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    & figure {
-        margin: 0;
-        padding: 0;
+	& figure {
+		margin: 0;
+		padding: 0;
 
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
 .caixaDoConteudo {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: calc(100% - 20px);
-    column-gap: 20px;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: calc(100% - 20px);
+	column-gap: 20px;
+}
+
+.headerDoItem {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 160px calc(100% - 160px);
 }
 
 .botaoDarEsse {
-    width: 135px;
-    height: 40px;
-    display: block;
-    border-radius: 5px;
-    border: none;
-    background-color: #9CD277;
-    margin: 10px 0 0 auto;
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
-    line-height: 28px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: #4E3921;
+	width: 135px;
+	height: 40px;
+	display: block;
+	border-radius: 5px;
+	border: none;
+	background-color: #9cd277;
+	margin: 10px 0 0 auto;
+	font-family: "Amatic SC", cursive;
+	text-align: center;
+	line-height: 28px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #4e3921;
 }
 
 .nomeDoItem {
-    font-family: 'Amatic SC', cursive;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: left;
-    margin: 0px;
-    color: #4E3921;
-
+	font-family: "Amatic SC", cursive;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0px;
+	color: #4e3921;
 }
 
 .valorDoItem {
-    font-family: 'Amatic SC', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin: 0px;
-    color: #4E3921;
-
+	font-family: "Amatic SC", cursive;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0px;
+	color: #4e3921;
 }
 
 @media screen and (min-width: 992px) {
-    .titulo {
-        font-size: 140px;
-        margin-top: 0;
-    }
+	.titulo {
+		font-size: 140px;
+		margin-top: 0;
+	}
 
-    .loginBox {
-        width: 240px;
-    }
+	.loginBox {
+		width: 240px;
+	}
 
-    .nomeDoItem {
-        font-size: 42px;
-    }
+	.nomeDoItem {
+		font-size: 42px;
+	}
 
-    .valorDoItem {
-        font-size: 30px;
-    }
+	.valorDoItem {
+		font-size: 30px;
+	}
 
-    .retanguloDoItem {
-        grid-template-columns: 80px calc(100% - 80px);
-    }
+	.retanguloDoItem {
+		grid-template-columns: 80px calc(100% - 80px);
+	}
 
-    .caixaDoConteudo {
-        grid-template-columns: calc(100% - 175px) 135px;
-    }
+	.caixaDoConteudo {
+		grid-template-columns: calc(100% - 175px) 135px;
+	}
 }
