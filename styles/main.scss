@@ -102,29 +102,37 @@ body {
 .retanguloDoItem {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 100px calc(100% - 100px);
+    grid-template-columns: 80px calc(100% - 80px);
     column-gap: 20px;
-    height: 120px;
     width: 100%;
     padding: 10px;
     background-color: #fff;
     border-radius: 12px;
 
+    margin-bottom: 20px;
+}
+
+.caixaDaFoto {
+    display: flex;
+    align-items: center;
+
     & figure {
-        margin: 0; padding: 0;
+        margin: 0;
+        padding: 0;
+
         img {
-            width: 100%; height: auto;
+            width: 100%;
+            height: auto;
         }
     }
-
 }
 
 .caixaDoConteudo {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: calc(100% - 175px) 135px;
+    grid-template-columns: calc(100% - 20px);
     column-gap: 20px;
-    }
+}
 
 .botaoDarEsse {
     width: 135px;
@@ -133,7 +141,7 @@ body {
     border-radius: 5px;
     border: none;
     background-color: #9CD277;
-    margin: 0px auto;
+    margin: 10px 0 0 auto;
     font-family: 'Amatic SC', cursive;
     text-align: center;
     line-height: 28px;
@@ -145,7 +153,7 @@ body {
 
 .nomeDoItem {
     font-family: 'Amatic SC', cursive;
-    font-size: 42px;
+    font-size: 28px;
     font-weight: bold;
     text-align: left;
     margin: 0px;
@@ -155,7 +163,7 @@ body {
 
 .valorDoItem {
     font-family: 'Amatic SC', cursive;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
     margin: 0px;
@@ -171,5 +179,21 @@ body {
 
     .loginBox {
         width: 240px;
+    }
+
+    .nomeDoItem {
+        font-size: 42px;
+    }
+
+    .valorDoItem {
+        font-size: 30px;
+    }
+
+    .retanguloDoItem {
+        grid-template-columns: 80px calc(100% - 80px);
+    }
+
+    .caixaDoConteudo {
+        grid-template-columns: calc(100% - 175px) 135px;
     }
 }
