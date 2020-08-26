@@ -58,6 +58,7 @@ const ListaDePresentesPage = () => {
 											<p className="valorDoItem">Valor Aproximado: R$ 250,00</p>
 										</div>
 									</div>
+
 									<div className="descricaoDoItem">
 										<p>Lorem ipsum dolor sit amet</p>
 										<button
