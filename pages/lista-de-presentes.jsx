@@ -39,7 +39,7 @@ const ListaDePresentesPage = () => {
 													colapsed ? setColapsed(false) : setColapsed(true)
 												}
 											>
-												Eu vou dar esse!
+												Quero dar esse!
 											</button>
 										</div>
 									</div>
