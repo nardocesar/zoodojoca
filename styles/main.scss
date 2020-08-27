@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 html,
 body {
@@ -108,12 +109,13 @@ body {
 .retanguloDoItem {
 	box-sizing: border-box;
 	display: grid;
-	grid-template-columns: 60px calc(100% - 60px);
+	grid-template-columns: 80px calc(100% - 80px);
 	column-gap: 20px;
 	width: 100%;
 	padding: 10px;
 	background-color: #fff;
 	border-radius: 12px;
+	border: solid 1px #fee4a6;
 
 	margin-bottom: 20px;
 
@@ -155,7 +157,7 @@ body {
 .botaoDarEsse {
 	width: 135px;
 	height: 40px;
-	display: block;
+	display: inline-block;
 	border-radius: 5px;
 	border: none;
 	background-color: #9cd277;
@@ -167,6 +169,32 @@ body {
 	font-weight: bold;
 	font-size: 20px;
 	color: #4e3921;
+}
+
+.botaoDarOutro {
+	width: 135px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 5px;
+	border: solid 1px #e0e0e0;
+	background-color: #fff;
+	margin: 10px auto 0 0;
+	font-family: "Amatic SC", cursive;
+	text-align: center;
+	line-height: 28px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #bdbdbd;
+}
+
+.tituloDoItem {
+	a {
+		font-family: "Open Sans", sans-serif;
+		display: block;
+		font-size: 12px;
+		color: #f9c4aa;
+	}
 }
 
 .nomeDoItem {
@@ -185,6 +213,59 @@ body {
 	text-align: left;
 	margin: 0px;
 	color: #4e3921;
+	margin-bottom: 10px;
+}
+
+.opcoesEntrega {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 20px 0;
+
+	.opcao {
+		width: 100%;
+		padding: 5px;
+		border: solid 1px #3f5085;
+		background-color: #fff;
+		outline: none;
+
+		font-family: "Open Sans", sans-serif;
+		font-size: 12px;
+		color: #212121;
+
+		transition: all 200ms ease-out;
+
+		&.selecionado {
+			background-color: #3f5085;
+			color: #fff;
+		}
+
+		&:first-child {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		&:last-child {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+}
+
+.descricaoDoItem {
+	font-family: "Open Sans", sans-serif;
+	p {
+		font-size: 14px;
+		color: #646464;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+}
+
+.botoesDescricao {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 10px;
 }
 
 @media screen and (min-width: 992px) {
