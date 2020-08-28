@@ -1,18 +1,17 @@
 {
-	"presentes": [
-		{
+	"presentes": [{
 			"nome": "Moisés Portátil",
 			"preco": 1300,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/Chicco%20Hug.jpg?alt=media&token=5874fb93-b446-4e16-982b-28ce7b9badbc",
 			"link": "https://amzn.to/2YB3kXF",
-			"descricao": null ,
+			"descricao": null,
 			"ganho": false
 		},
 		{
 			"nome": "Banheirinha",
 			"preco": 250,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/banheirinha.jpg?alt=media&token=5c171100-8c8a-49d9-bf21-b552f1b2fa8a",
-			"link":"https://amzn.to/34CVkJy",
+			"link": "https://amzn.to/34CVkJy",
 			"descricao": "Só cabe esse tamanho no meu futuro banheiro. Mas se tiver outra na mesma medida, pode ser!!",
 			"ganho": false
 		},
@@ -29,7 +28,7 @@
 			"preco": 60,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/Chupeta%206%20meses.jpg?alt=media&token=5e2bf983-7b74-41da-bf85-8b0c4f248d12",
 			"link": "https://amzn.to/3jbDXmW",
-			"descricao": "",
+			"descricao": null,
 			"ganho": false
 		},
 		{
@@ -252,7 +251,7 @@
 			"nome": "Tapete para o Quartinho",
 			"preco": 238,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/tapete%20elefante.jpg?alt=media&token=e47379ed-34ee-401a-959e-a87d809fa22a",
-			"link": "https://amzn.to/3lpuBWu"
+			"link": "https://amzn.to/3lpuBWu",
 			"descricao": "Esse vai combinar direitinho com meu quarto!",
 			"ganho": false
 		},
@@ -269,12 +268,12 @@
 			"preco": 65,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/trocador%20bolsa.jpg?alt=media&token=3b4ba6d7-1d82-4fe3-8e50-eaaa5f9f648c",
 			"link": "https://amzn.to/2YELiUd",
-			"descricao": "",
+			"descricao": null,
 			"ganho": false
 		},
 		{
 			"nome": "Cadeirinha para Carro",
-			"preco":1200 ,
+			"preco": 1200,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/carseatblack.jpg?alt=media&token=9ff0ffd7-4968-4ce3-9df6-6c52db29f830",
 			"link": "https://www.americanas.com.br/produto/134588727/cadeira-para-auto-multifix-com-isofix-0-a-36kg-black-urban-safety-1st?pfm_carac=Cadeirinha%20com%20Isofix%20Multifix%200%20a%2036kg%2C%20Safety%201st%2C%20Grey%20Urban%20black&pfm_page=search&pfm_pos=grid&pfm_type=search_page",
 			"descricao": "Papai e Mamãe escolheram esse pra eu poder usar por um teeempão!",
@@ -282,7 +281,7 @@
 		},
 		{
 			"nome": "Protetor para banco de carro",
-			"preco": 130 ,
+			"preco": 130,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/protetorcarro.jpg?alt=media&token=eb20f5f7-2a8f-49ad-8f69-65d75a64644e",
 			"link": "https://www.americanas.com.br/produto/1679856429/protetor-de-banco-safety-1st-black?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_todos-os-produtos_geral_gmv&gclid=CjwKCAjwkJj6BRA-EiwA0ZVPVuz9YzhB8TRwKi6oJPZXp_c0NIin7Qm-u5gfbKgTJf_zZbK-GIh4jRoCmBYQAvD_BwE&i=56f30ab2eec3dfb1f8ebb847&o=5ea9ee36f8e95eac3d6078fc&opn=YSMESP&sellerid=18552346000168",
 			"descricao": "Pra minha cadeirinha não escorregar no carro!",
@@ -365,7 +364,7 @@
 			"preco": 70,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/almofada%20amamentacao.jpg?alt=media&token=7cbb5254-0a21-4245-b45f-0ab8bd10998b",
 			"link": "https://www.graodegente.com.br/almofada-amamentacao-1/almofada-amamentacao-amiguinhos-safari-bege",
-			"descricao": "",
+			"descricao": "Esse vai combinar direitinho com meu quarto!",
 			"ganho": false
 		}
 	],
