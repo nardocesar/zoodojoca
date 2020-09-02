@@ -154,8 +154,12 @@ export async function getStaticProps({ req }) {
 		? `${req.protocol}://${req.get("Host")}`
 		: process.env.BASE_URL;
 
-	const request = await fetch(`${baseUrl}/api/lista-de-presentes`);
-	const listaDePresentes = await request.json();
+	const response = await fetch(`${baseUrl}/api/lista-de-presentes`);
+	const text = await response.text();
+
+	console.log(text);
+
+	const listaDePresentes = JSON.parse(text);
 
 	return {
 		props: {
