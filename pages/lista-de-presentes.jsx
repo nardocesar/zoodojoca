@@ -150,7 +150,7 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 };
 
 export async function getStaticProps() {
-	const request = await fetch(`${process.env.BASE_URL}/api/lista-de-presentes`);
+	const request = await fetch(`${process.env.BASE_URL}/api/presentes`);
 	const listaDePresentes = await request.json();
 
 	return {
