@@ -149,21 +149,13 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 	);
 };
 
-export async function getStaticProps({ req }) {
-	const baseUrl = req
-		? `${req.protocol}://${req.get("Host")}`
-		: process.env.BASE_URL;
-
-	const response = await fetch(`${baseUrl}/api/lista-de-presentes`);
-	const text = await response.text();
-
-	console.log(text);
-
-	const listaDePresentes = JSON.parse(text);
+export async function getStaticProps() {
+	// const request = await fetch(`${process.env.BASE_URL}/api/lista-de-presentes`);
+	// const listaDePresentes = await request.json();
 
 	return {
 		props: {
-			listaDePresentes,
+			listaDePresentes: [],
 		},
 	};
 }
