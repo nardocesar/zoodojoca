@@ -1,10 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import fetch from "node-fetch";
+import { useRouter } from 'next/router';
 
 const ListaDePresentesPage = ({ listaDePresentes }) => {
+	const router = useRouter();
+	const [logged, setLogged] = useState(false);
+
 	const items = listaDePresentes || new Array(10).fill(1);
 
+	useEffect(() => {
+		setLogged(sessionStorage.getItem('loggedIn'));
+		console.log(logged);
+
+		if (!logged) {
+			router.push('/')
+		}
+
+	}, [logged])
+
 	return (
+		!logged ? (<p>Aguarde...</p>) :
 		<>
 			<figure className="headerLista">
 				<img src="header2.png" alt="Header do site" />
@@ -155,7 +170,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			listaDePresentes,
+			listaDePresentes
 		},
 	};
 }
