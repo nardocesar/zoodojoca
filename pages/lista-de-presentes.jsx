@@ -73,10 +73,10 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 													{item.link}
 												</a>
 												<a
-													href={`https://picpay.com/nardocesar/${item.preco}`}
+													href={`https://app.picpay.com/user/nardocesar/${item.preco}`}
 													target="_blank"
 												>
-													https://picpay.com/nardocesar
+													Mandar R${item.preco} pelo Picpay
 												</a>
 											</div>
 										</div>
