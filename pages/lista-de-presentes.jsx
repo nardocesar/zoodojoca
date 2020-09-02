@@ -149,8 +149,12 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 	);
 };
 
-export async function getStaticProps() {
-	const request = await fetch(`${process.env.BASE_URL}/api/lista-de-presentes`);
+export async function getStaticProps({ req }) {
+	const baseUrl = req
+		? `${req.protocol}://${req.get("Host")}`
+		: process.env.BASE_URL;
+
+	const request = await fetch(`${baseUrl}/api/lista-de-presentes`);
 	const listaDePresentes = await request.json();
 
 	return {
