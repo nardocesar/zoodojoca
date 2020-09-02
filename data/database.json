@@ -112,7 +112,7 @@
 			"ganho": false
 		},
 		{
-			"nome": "Frlada M",
+			"nome": "Fralda M",
 			"preco": 35,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/fralda%20M.jpg?alt=media&token=e360401e-8129-4408-99cb-0cc88217a11d",
 			"link": "https://amzn.to/2Qt2aca",
@@ -120,7 +120,7 @@
 			"ganho": false
 		},
 		{
-			"nome": "Frlada M",
+			"nome": "Fralda M",
 			"preco": 35,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/fralda%20M.jpg?alt=media&token=e360401e-8129-4408-99cb-0cc88217a11d",
 			"link": "https://amzn.to/2Qt2aca",
@@ -128,7 +128,7 @@
 			"ganho": false
 		},
 		{
-			"nome": "Frlada M",
+			"nome": "Fralda M",
 			"preco": 35,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/fralda%20M.jpg?alt=media&token=e360401e-8129-4408-99cb-0cc88217a11d",
 			"link": "https://amzn.to/2Qt2aca",
@@ -136,7 +136,7 @@
 			"ganho": false
 		},
 		{
-			"nome": "Frlada M",
+			"nome": "Fralda M",
 			"preco": 35,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/fralda%20M.jpg?alt=media&token=e360401e-8129-4408-99cb-0cc88217a11d",
 			"link": "https://amzn.to/2Qt2aca",
@@ -144,7 +144,7 @@
 			"ganho": false
 		},
 		{
-			"nome": "Frlada M",
+			"nome": "Fralda M",
 			"preco": 35,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/fralda%20M.jpg?alt=media&token=e360401e-8129-4408-99cb-0cc88217a11d",
 			"link": "https://amzn.to/2Qt2aca",
@@ -280,14 +280,6 @@
 			"ganho": false
 		},
 		{
-			"nome": "Protetor para banco de carro",
-			"preco": 130,
-			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/protetorcarro.jpg?alt=media&token=eb20f5f7-2a8f-49ad-8f69-65d75a64644e",
-			"link": "https://www.americanas.com.br/produto/1679856429/protetor-de-banco-safety-1st-black?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&epar=bp_pl_00_go_todos-os-produtos_geral_gmv&gclid=CjwKCAjwkJj6BRA-EiwA0ZVPVuz9YzhB8TRwKi6oJPZXp_c0NIin7Qm-u5gfbKgTJf_zZbK-GIh4jRoCmBYQAvD_BwE&i=56f30ab2eec3dfb1f8ebb847&o=5ea9ee36f8e95eac3d6078fc&opn=YSMESP&sellerid=18552346000168",
-			"descricao": "Pra minha cadeirinha não escorregar no carro!",
-			"ganho": false
-		},
-		{
 			"nome": "Almofada para carrinho de bebê",
 			"preco": 185,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/almofada%20para%20carrinho.jpg?alt=media&token=20f6493e-18e9-4b8a-b5ab-9c23531cb3a3",
@@ -301,14 +293,6 @@
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/carrinho%20abc.jpg?alt=media&token=4c0561d1-a51e-4787-bae5-58d2db8c5d64",
 			"link": "https://amzn.to/2YBg3JI",
 			"descricao": "Mamãe procurou bastaaante e escolheu esse modelo pra eu desfilar!",
-			"ganho": false
-		},
-		{
-			"nome": "Cortininha para carro",
-			"preco": 70,
-			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/cortina%20carro.jpg?alt=media&token=5f185a9b-5919-4eeb-b078-bea0992076af",
-			"link": "https://www.americanas.com.br/produto/1708737631/cortina-retratil-luxo-para-carro-clingo-novo?WT.srch=1&acc=e789ea56094489dffd798f86ff51c7a9&cor=preto&epar=bp_pl_00_go_todos-os-produtos_geral_gmv&gclid=CjwKCAjwkJj6BRA-EiwA0ZVPVsa7omPjgCqeGsFIZ_7w-G1zM0M9EMJFr6oRNjN4ZKCyV-xDu_re2hoCmvEQAvD_BwE&i=5ac6ef70eec3dfb1f8f1732c&o=5ebd8a86f8e95eac3db31eeb&opn=YSMESP&sellerid=9434345000128&voltagem=na",
-			"descricao": "Importante pra eu não pegar muito sol no carro.",
 			"ganho": false
 		},
 		{

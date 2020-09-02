@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 
 const ListaDePresentesPage = ({ listaDePresentes }) => {
 	const items = listaDePresentes || new Array(10).fill(1);
+
 	return (
 		<>
 			<figure className="headerLista">
@@ -68,8 +69,15 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 												<p className="valorDoItem">
 													Valor Aproximado: R$ {item.preco}
 												</p>
-												<a href="#">{item.link}</a>
-												<a href="#">https://picpay.com</a>
+												<a href={item.link} target="_blank">
+													{item.link}
+												</a>
+												<a
+													href={`https://picpay.com/nardocesar/${item.valor}`}
+													target="_blank"
+												>
+													https://picpay.com/nardocesar
+												</a>
 											</div>
 										</div>
 
@@ -144,6 +152,7 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 export async function getStaticProps() {
 	const request = await fetch(`${process.env.BASE_URL}/api/lista-de-presentes`);
 	const listaDePresentes = await request.json();
+
 	return {
 		props: {
 			listaDePresentes,
