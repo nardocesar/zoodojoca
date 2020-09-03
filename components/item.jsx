@@ -68,7 +68,7 @@ const ListItem = ({ item }) => {
 								className={send ? "opcao" : "opcao selecionado"}
 								onClick={() => (send ? setSend(false) : setSend(true))}
 							>
-								Vou encontrar os papai e entregar
+								Vou encontrar os papais e entregar
 							</button>
 						</div>
 						<div className="descricaoEntrega">
@@ -86,7 +86,7 @@ const ListItem = ({ item }) => {
 							) : (
 								<p>
 									Ebaaa! Manda uma mensagem no WhatsApp deles para vocês
-									combinarem. Estou esperando sua visita!
+									combinarem.
 								</p>
 							)}
 						</div>
