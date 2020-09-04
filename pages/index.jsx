@@ -5,10 +5,15 @@ import { useRouter } from "next/router";
 export default function Home({ base_url }) {
 	const router = useRouter();
 	const [password, setPassword] = useState("");
+	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState("");
 
 	const setState = (event) => {
 		setPassword(event.target.value);
+	};
+
+	const clearError = () => {
+		setError("");
 	};
 
 	const postPass = async () => {
@@ -25,9 +30,13 @@ export default function Home({ base_url }) {
 	};
 
 	const enterSite = async () => {
+		setLoading(true);
 		const { message, status } = await postPass();
 
+		setLoading(false);
+
 		if (status === "VALID") {
+			clearError();
 			sessionStorage.setItem("loggedIn", "YES");
 			router.push("/lista-de-presentes");
 		} else {
@@ -50,9 +59,16 @@ export default function Home({ base_url }) {
 					value={password}
 					onChange={setState}
 				/>
-				<button className="button" onClick={enterSite}>
+				<button className="button" onClick={enterSite} disabled={loading}>
+					<i
+						className="loader"
+						style={{ display: loading ? "inline-block" : "none" }}
+					></i>
 					ENTRAR
 				</button>
+				<p className="passError" style={{ display: error ? "block" : "none" }}>
+					Senha incorreta. Tente novamente!
+				</p>
 			</main>
 			<img
 				className="animaisEntrada"
