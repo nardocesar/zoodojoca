@@ -71,25 +71,30 @@ const ListItem = ({ item }) => {
 						<div className="tituloDoItem">
 							{buyDecision === "BUY" ? (
 								<div>
-									O link para comprar é esse aqui:{" "}
+									<span>Dá pra comprar nesse link aqui:</span>{" "}
 									<a href={item.link} target="_blank">
 										{item.link}
 									</a>
 								</div>
 							) : (
 								<div>
-									O link para mandar o dindin:{" "}
+									<span>Link para mandar o dindin:</span>{" "}
 									<a
 										href={`https://app.picpay.com/user/nardocesar/${item.preco}`}
 										target="_blank"
 									>
-										mandar R${item.preco} pelo Picpay
+										{item.preco >= 150 ? (
+											<>Mandar R${item.preco} ou outro valor pelo Picpay</>
+										) : (
+											<>Mandar R${item.preco} pelo Picpay</>
+										)}
 									</a>
 								</div>
 							)}
 						</div>
 						{buyDecision === "BUY" ? (
 							<>
+								<h3>E pra entregar o presentinho?</h3>
 								<div className="opcoesEntrega">
 									<button
 										className={send ? "opcao selecionado" : "opcao"}
@@ -138,7 +143,7 @@ const ListItem = ({ item }) => {
 								Vou escolher outro
 							</button>
 							<button
-								className="botaoDarEsse"
+								className="botaoDeixaEsse"
 								onClick={() =>
 									colapsed ? setColapsed(false) : setColapsed(true)
 								}
