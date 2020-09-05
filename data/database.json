@@ -1,10 +1,10 @@
 {
 	"presentes": [{
-			"nome": "Moisés Portátil",
+			"nome": "Moisés Para Casa",
 			"preco": 1300,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/Chicco%20Hug.jpg?alt=media&token=5874fb93-b446-4e16-982b-28ce7b9badbc",
 			"link": "https://amzn.to/2YB3kXF",
-			"descricao": null,
+			"descricao": "Prático pra mamãe me ter sempre pertinho! Esse você pode me dar todo o presente ou mandar qualquer valor para o papai compra-lo!",
 			"ganho": false
 		},
 		{
@@ -12,7 +12,7 @@
 			"preco": 250,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/banheirinha.jpg?alt=media&token=5c171100-8c8a-49d9-bf21-b552f1b2fa8a",
 			"link": "https://amzn.to/34CVkJy",
-			"descricao": "Só cabe esse tamanho no meu futuro banheiro. Mas se tiver outra na mesma medida, pode ser!!",
+			"descricao": "Só cabe esse tamanho no meu futuro banheiro. Mas se tiver outra na mesma medida, pode ser!! Esse você pode me dar todo o presente ou mandar qualquer valor para o papai compra-lo!",
 			"ganho": false
 		},
 		{
@@ -20,7 +20,7 @@
 			"preco": 80,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/Chupeta%200%20a%203.jpg?alt=media&token=c63228a3-83c1-485f-acdb-9efa5839399f",
 			"link": "https://www.paguemenos.com.br/chupeta-avent-soothie-meninos-de-0-a-3-meses-com-2-unidades/p?idsku=53740&gclid=Cj0KCQjw7Nj5BRCZARIsABwxDKLucZ0Xhn7uQrtesxUTlYxZq1ZoC4sbTy7HoTnf-EqyFqILKjhJkTIaAmiFEALw_wcB",
-			"descricao": "A médica da mamãe que indicou essa específica!",
+			"descricao": "A médica da mamãe que indicou esse modelinho específico!",
 			"ganho": false
 		},
 		{
@@ -36,7 +36,7 @@
 			"preco": 100,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/Wrap%20Sling.jpg?alt=media&token=f4b84970-63cc-450b-9702-7697622575bd",
 			"link": "https://pannosling.com.br/produto/wrap-sling-cinza-chumbo-liso/",
-			"descricao": "Mamãe achou essa cor linda porque não vou sujar tanto",
+			"descricao": "Mamãe ouviu dizer que essa marca é ótima!",
 			"ganho": false
 		},
 		{
@@ -44,7 +44,7 @@
 			"preco": 100,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/Sling%20de%20Argola.jpg?alt=media&token=5e6ae39d-6e2f-4224-8b18-da8d0c07cc22",
 			"link": "https://pannosling.com.br/produto/sling-de-argolas-marrom-liso-argolas-douradas/",
-			"descricao": "Papai disse que essa cor é muito legal!",
+			"descricao": "Mamãe ouviu dizer que essa marca é ótima!",
 			"ganho": false
 		},
 		{
@@ -52,7 +52,7 @@
 			"preco": 28,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/9decdd4bb74fd860037d3bdcc3018ca0.jpg?alt=media&token=a8f2e729-253e-4cc0-b5fe-31f72405ca01",
 			"link": "https://amzn.to/2QrJPw5",
-			"descricao": "A médica da mamãe falou que essa marca é mais difícil de me dar alergias.",
+			"descricao": "Minha futura médica falou que essa marca é mais difícil de me dar alergias.",
 			"ganho": false
 		},
 		{
@@ -60,7 +60,7 @@
 			"preco": 28,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/9decdd4bb74fd860037d3bdcc3018ca0.jpg?alt=media&token=a8f2e729-253e-4cc0-b5fe-31f72405ca01",
 			"link": "https://amzn.to/2QrJPw5",
-			"descricao": "A médica da mamãe falou que essa marca é mais difícil de me dar alergias.",
+			"descricao": "Minha futura médica falou que essa marca é mais difícil de me dar alergias.",
 			"ganho": false
 		},
 		{
@@ -68,7 +68,7 @@
 			"preco": 28,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/9decdd4bb74fd860037d3bdcc3018ca0.jpg?alt=media&token=a8f2e729-253e-4cc0-b5fe-31f72405ca01",
 			"link": "https://amzn.to/2QrJPw5",
-			"descricao": "A médica da mamãe falou que essa marca é mais difícil de me dar alergias.",
+			"descricao": "Minha futura médica falou que essa marca é mais difícil de me dar alergias.",
 			"ganho": false
 		},
 		{
@@ -156,7 +156,7 @@
 			"preco": 45,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/brinquedinhos%20banho.jpg?alt=media&token=501ada54-81de-4650-9f1d-5d1c05c18614",
 			"link": "https://amzn.to/3gFkgT7",
-			"descricao": "Só uma sugestão da mamãe, mas pode escolher se preferir!",
+			"descricao": "Só uma sugestão da mamãe, mas pode escolher outro!",
 			"ganho": false
 		},
 		{
@@ -188,7 +188,7 @@
 			"preco": 60,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/protetor%20colch%C3%A3o.jpg?alt=media&token=f78a5a44-6d15-40d5-8953-5d5dcabfd1f8",
 			"link": "https://amzn.to/2EGSuZ6",
-			"descricao": "Pode escolher a marca que preferir!",
+			"descricao": "Pode ser de qualquer marca!",
 			"ganho": false
 		},
 		{
@@ -204,7 +204,7 @@
 			"preco": 55,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/jogo-de-lencol-mini-berco-amiguinhos-safari-311801.jpg?alt=media&token=cd610bb0-73e2-4847-891e-e6e2fd1641f3",
 			"link": "https://www.graodegente.com.br/lencol-berco-e-mini-berco/jogo-de-lencol-mini-berco-amiguinhos-safari-bege",
-			"descricao": "Esse vai combinar direitinho com meu quarto!",
+			"descricao": "Pra combinar direitinho com meu quarto!",
 			"ganho": false
 		},
 		{
@@ -212,7 +212,7 @@
 			"preco": 55,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/jogo-de-lencol-mini-berco-poa-bege-311806.jpg?alt=media&token=9e854340-9079-4bbb-89d3-a833e2ee7d6c",
 			"link": "https://www.graodegente.com.br/lencol-berco-e-mini-berco/jogo-de-lencol-mini-berco-poa-bege",
-			"descricao": "Esse vai combinar direitinho com meu quarto!",
+			"descricao": "Pra combinar direitinho com meu quarto!",
 			"ganho": false
 		},
 		{
@@ -220,7 +220,7 @@
 			"preco": 55,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/jogo-de-lencol-mini-berco-safari-baby-294710.jpg?alt=media&token=eb12b830-083e-499e-9b54-94378c80daf1",
 			"link": "https://www.graodegente.com.br/lencol-berco-e-mini-berco/jogo-de-lencol-mini-berco-safari-baby-cinza",
-			"descricao": "Esse vai combinar direitinho com m eu quarto!",
+			"descricao": "Pra combinar direitinho com meu quarto!",
 			"ganho": false
 		},
 		{
@@ -244,7 +244,7 @@
 			"preco": 236,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/tapette%20leao.jpg?alt=media&token=142c614f-363c-46fc-bda9-04a161c4e277",
 			"link": "https://www.graodegente.com.br/tapete-quarto-de-bebe-1/tapete-amiguinho-leao-90cm-amarelo-laranja",
-			"descricao": "Esse vai combinar direitinho com meu quarto!",
+			"descricao": "Esse vai combinar direitinho com meu quarto! Esse você pode me dar todo o presente ou mandar qualquer valor para o papai compra-lo!",
 			"ganho": false
 		},
 		{
@@ -252,7 +252,7 @@
 			"preco": 238,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/tapete%20elefante.jpg?alt=media&token=e47379ed-34ee-401a-959e-a87d809fa22a",
 			"link": "https://amzn.to/3lpuBWu",
-			"descricao": "Esse vai combinar direitinho com meu quarto!",
+			"descricao": "Esse vai combinar direitinho com meu quarto! Esse você pode me dar todo o presente ou mandar qualquer valor para o papai compra-lo!",
 			"ganho": false
 		},
 		{
@@ -260,7 +260,7 @@
 			"preco": 117,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/trocador%20quarto.jpg?alt=media&token=846e6912-d8c9-4461-8d34-10d2da2ee9de",
 			"link": "https://www.graodegente.com.br/trocador-3/trocador-de-fraldas-plastificado-e-bordado-amiguinhos-safari-bege",
-			"descricao": null,
+			"descricao": "Essa estampa vai combinar com tudo do meu quartinho!!",
 			"ganho": false
 		},
 		{
@@ -268,7 +268,7 @@
 			"preco": 65,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/trocador%20bolsa.jpg?alt=media&token=3b4ba6d7-1d82-4fe3-8e50-eaaa5f9f648c",
 			"link": "https://amzn.to/2YELiUd",
-			"descricao": null,
+			"descricao": "Vai que precisa trocar minha fraldinha fora de casa né!!",
 			"ganho": false
 		},
 		{
@@ -276,7 +276,7 @@
 			"preco": 1200,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/carseatblack.jpg?alt=media&token=9ff0ffd7-4968-4ce3-9df6-6c52db29f830",
 			"link": "https://www.americanas.com.br/produto/134588727/cadeira-para-auto-multifix-com-isofix-0-a-36kg-black-urban-safety-1st?pfm_carac=Cadeirinha%20com%20Isofix%20Multifix%200%20a%2036kg%2C%20Safety%201st%2C%20Grey%20Urban%20black&pfm_page=search&pfm_pos=grid&pfm_type=search_page",
-			"descricao": "Papai e Mamãe escolheram esse pra eu poder usar por um teeempão!",
+			"descricao": "Papai e Mamãe escolheram esse modelo pra eu poder usar por um teeempão! Esse você pode me dar todo o presente ou mandar qualquer valor para o papai compra-lo!",
 			"ganho": false
 		},
 		{
@@ -284,7 +284,7 @@
 			"preco": 185,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/almofada%20para%20carrinho.jpg?alt=media&token=20f6493e-18e9-4b8a-b5ab-9c23531cb3a3",
 			"link": "https://amzn.to/2QuXWAF",
-			"descricao": "Vou ficar bem confortável quando for passear!",
+			"descricao": "Pra eu ficar bem confortável quando for passear!",
 			"ganho": false
 		},
 		{
@@ -292,7 +292,7 @@
 			"preco": 1000,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/carrinho%20abc.jpg?alt=media&token=4c0561d1-a51e-4787-bae5-58d2db8c5d64",
 			"link": "https://amzn.to/2YBg3JI",
-			"descricao": "Mamãe procurou bastaaante e escolheu esse modelo pra eu desfilar!",
+			"descricao": "Mamãe procurou bastaaante e escolheu esse modelo pra eu desfilar! Esse você pode me dar todo o presente ou mandar qualquer valor para o papai compra-lo!",
 			"ganho": false
 		},
 		{
@@ -300,7 +300,7 @@
 			"preco": 200,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/tapete%20atividades.jpg?alt=media&token=b19037fe-980f-4207-9ef5-bcb669d25e06",
 			"link": "https://amzn.to/2YDsoNu",
-			"descricao": "Esse é pra eu aprender a brincar sozinho!",
+			"descricao": "Pra eu já começar a me divertir sozinho! Esse você pode me dar todo o presente ou mandar qualquer valor para o papai compra-lo!",
 			"ganho": false
 		},
 		{
@@ -324,7 +324,7 @@
 			"preco": 120,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/ambar.jpg?alt=media&token=758148ed-b93d-4092-8e54-21310ed943b4",
 			"link": "https://www.ambarbaltico.com.br/pulseira-ambar/Pulseira-tornozeleira-de-ambar-crianca-olive-rainbow-polido-165-cm",
-			"descricao": "Disseram pra mamãe qque pode ajudar a me acalmar!",
+			"descricao": "Disseram pra mamãe que âmbar ajuda a me acalmar!",
 			"ganho": false
 		},
 		{
@@ -348,7 +348,71 @@
 			"preco": 70,
 			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/almofada%20amamentacao.jpg?alt=media&token=7cbb5254-0a21-4245-b45f-0ab8bd10998b",
 			"link": "https://www.graodegente.com.br/almofada-amamentacao-1/almofada-amamentacao-amiguinhos-safari-bege",
-			"descricao": "Esse vai combinar direitinho com meu quarto!",
+			"descricao": "Vai combinar direitinho com meu quarto!",
+			"ganho": false
+		}
+		{
+			"nome": "Fralda Ecológica (Aliexpress!)",
+			"preco":100,
+			"imagem":"https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/fralda%20ecologica.jpg?alt=media&token=0b3b4441-0f77-44eb-bf50-bb68a83448be",
+			"link":"https://pt.aliexpress.com/item/32861703878.html?spm=a2g0o.cart.0.0.f5ba3c00r9iCTJ&mp=1",
+			"descricao":"Acho que vou me adaptar à essas fraldas moderninhas!",
+			"ganho": false
+		},
+		{
+			"nome":"Redinha para Frutas",
+			"preco":50,
+			"imagem":"https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/redinha%20fruta.jpg?alt=media&token=e7ecbaf2-edf6-4ecd-ab9b-16b0cc2bd99f",
+			"link":"https://amzn.to/3i2xo5X",
+			"descricao":"Comer frutinhas sem risco de engasgar! Delícia!",
+			"ganho": false
+		},
+		{
+			"nome":"Brinquedo Chocalho",
+			"preco":60,
+			"imagem":"https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/brinquedo%20chaveiro.jpg?alt=media&token=98363d04-c030-447f-985b-a084e008ae12",
+			"link":"https://amzn.to/3lS2OhO",
+			"descricao":null,
+			"ganho": false
+		},
+		{
+			"nome": "Prendedor para Chupeta",
+			"preco":32,
+			"imagem": "https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/prendedor%20chupeta.jpg?alt=media&token=c4e81138-fc29-46b5-a483-08855a3fecb8",
+			"link":"https://amzn.to/2F1jxi9",
+			"descricao":"Pode ser qualquer bichinho!",
+			"ganho": false
+		},
+		{
+			"nome":"Mini mobile para Carrinho",
+			"preco":100,
+			"imagem":"https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/mini%20mobile.jpg?alt=media&token=79c38e6c-736d-4893-83f1-6330e43b98e6",
+			"link":"https://amzn.to/3346Hrt",
+			"descricao":null,
+			"ganho": false
+		},
+		{
+			"nome":"Tigelas com ventosa",
+			"preco":120,
+			"imagem":"https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/tigelas%20com%20ventosa.jpg?alt=media&token=6e8d7661-63f9-4487-a98a-eb669fec49c5",
+			"link":"https://amzn.to/31ZQcx6",
+			"descricao":"Acho que não vou fazer tanta bagunça com esses potinhos",
+			"ganho": false
+		},
+		{
+			"nome":"Mordedor com água",
+			"preco":24,
+			"imagem":"https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/mordedor%20centopeia.jpg?alt=media&token=644a9304-527f-4965-8600-1eb38d81a606",
+			"link":"https://amzn.to/3bzv8kf",
+			"descricao":"Pra quando meus dentinhos começarem a nascer!",
+			"ganho": false
+		},
+		{
+			"nome": "Kit de babadores",
+			"preco":50,
+			"imagem":"https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/babadores.jpg?alt=media&token=57d40997-972f-4ffe-a02d-8017c0d9de98",
+			"link":"https://amzn.to/3lVuOkv",
+			"descricao":,
 			"ganho": false
 		}
 	],
