@@ -9,13 +9,23 @@ if (admin.apps.length === 0) {
 	})
 }
 
-const database = admin.database();
+const database = admin.firestore();
 
 const read = async (collection) => {
-	const ref = database.ref(collection);
-	const value = await ref.once('value');
+	const document = await database.collection(collection).get();
+	let data = [];
 
-	return await value.val();
+	document.forEach(doc => {
+		const id = doc.id;
+		const item = doc.data();
+
+		data.push({
+			...item,
+			id
+		});
+	});
+
+	return data;
 };
 
 export default read;

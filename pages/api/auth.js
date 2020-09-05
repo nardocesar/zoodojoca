@@ -3,8 +3,12 @@ import {
 } from '../../firebase';
 
 export default async (req, res) => {
-	const { password } = JSON.parse(req.body);
-	const pass = await read('userpass');
+	const {
+		password
+	} = JSON.parse(req.body);
+	const [{
+		pass
+	}] = await read('userpass');
 
 	const messages = {
 		success: {
@@ -18,6 +22,6 @@ export default async (req, res) => {
 	};
 
 	const response = password === pass ? messages.success : messages.error;
-	
+
 	return res.json(response)
 }

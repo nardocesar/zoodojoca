@@ -7,7 +7,7 @@ import { usePopup, useItem } from "../hooks";
 import ListItem from "../components/item";
 import Popup from "../components/popup";
 
-const ListaDePresentesPage = ({ listaDePresentes, base_url }) => {
+const ListaDePresentesPage = ({ data, base_url }) => {
 	const router = useRouter();
 	const [open, setOpen] = usePopup();
 	const [item, setItem] = useItem();
@@ -16,8 +16,6 @@ const ListaDePresentesPage = ({ listaDePresentes, base_url }) => {
 
 	useEffect(() => {
 		setLogged(sessionStorage.getItem("loggedIn") || "NO");
-
-		console.log(listaDePresentes);
 
 		if (logged === "NO") {
 			router.push("/");
@@ -32,8 +30,7 @@ const ListaDePresentesPage = ({ listaDePresentes, base_url }) => {
 				<img src="header2.png" alt="Header do site" />
 			</figure>
 			<main className="container">
-				{listaDePresentes
-					.map((item, index) => ({ ...item, id: index }))
+				{data
 					.sort((a, b) => {
 						if (a.nome > b.nome) return 1;
 						if (a.nome < b.nome) return -1;
@@ -61,12 +58,12 @@ const ListaDePresentesPage = ({ listaDePresentes, base_url }) => {
 
 export async function getStaticProps() {
 	const request = await fetch(`${process.env.BASE_URL}/api/presentes`);
-	const listaDePresentes = await request.json();
+	const data = await request.json();
 	const base_url = process.env.BASE_URL;
 
 	return {
 		props: {
-			listaDePresentes,
+			data,
 			base_url,
 		},
 	};

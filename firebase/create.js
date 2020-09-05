@@ -11,11 +11,15 @@ if (admin.apps.length === 0) {
 
 const database = admin.firestore();
 
-const update = async (collection, doc, body) => {
-	const ref = database.collection(collection).doc(doc);
-	const res = await ref.update(body);
+const create = async (colletction, list) => {
+	try {
+		await database.collection(colletction).add(list);
+		return {
+			data: list
+		};
+	} catch (error) {
+		throw new Error(error);
+	}
+}
 
-	return res.writeTime
-};
-
-export default update;
+export default create;

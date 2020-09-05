@@ -1,5 +1,6 @@
 import {
-	update
+	update,
+	read
 } from '../../../firebase';
 
 export default async (req, res) => {
@@ -10,10 +11,8 @@ export default async (req, res) => {
 		}
 	} = req;
 
-	const parsedBody = JSON.parse(body);
-
 	try {
-		const response = await update('presentes', id, parsedBody);
+		const response = await update('presentes', id, JSON.parse(body));
 		res.status(200).json(response);
 	} catch (error) {
 		res.status(500).json(error);
