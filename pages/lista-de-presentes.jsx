@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import fetch from "node-fetch";
 import { useRouter } from "next/router";
 
-import { usePopup } from "../hooks";
+import { usePopup, useItem } from "../hooks";
 
 import ListItem from "../components/item";
 import Popup from "../components/popup";
 
-const ListaDePresentesPage = ({ listaDePresentes }) => {
+const ListaDePresentesPage = ({ listaDePresentes, base_url }) => {
 	const router = useRouter();
 	const [open, setOpen] = usePopup();
+	const [item, setItem] = useItem();
+
 	const [logged, setLogged] = useState("");
 
 	useEffect(() => {
@@ -29,6 +31,7 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 			</figure>
 			<main className="container">
 				{listaDePresentes
+					.map((item, index) => ({ ...item, id: index }))
 					.sort((a, b) => {
 						if (a.nome > b.nome) return 1;
 						if (a.nome < b.nome) return -1;
@@ -36,11 +39,20 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 						return 0;
 					})
 					.map((item, index) => {
-						return <ListItem item={item} key={index} openPopup={setOpen} />;
+						return (
+							<ListItem
+								item={item}
+								key={index}
+								openPopup={setOpen}
+								setItem={setItem}
+							/>
+						);
 					})}
 			</main>
 
-			{open ? <Popup openPopup={setOpen} /> : null}
+			{open ? (
+				<Popup base_url={base_url} item={item} openPopup={setOpen} />
+			) : null}
 		</>
 	);
 };
@@ -48,10 +60,12 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 export async function getStaticProps() {
 	const request = await fetch(`${process.env.BASE_URL}/api/presentes`);
 	const listaDePresentes = await request.json();
+	const base_url = process.env.BASE_URL;
 
 	return {
 		props: {
 			listaDePresentes,
+			base_url,
 		},
 	};
 }

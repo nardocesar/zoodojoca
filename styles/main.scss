@@ -249,7 +249,9 @@ body {
 .botaoDeixaEsse {
 	width: 135px;
 	height: 40px;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 5px;
 	border: none;
 	background-color: #9cd277;
@@ -261,6 +263,25 @@ body {
 	font-weight: bold;
 	font-size: 20px;
 	color: #4e3921;
+}
+
+.botaoFechar {
+	width: 100%;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	border: none;
+	background-color: #4e3921;
+	margin: 10px 0 0 auto;
+	font-family: "Amatic SC", cursive;
+	text-align: center;
+	line-height: 28px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
 }
 
 .tituloDoItem {
@@ -393,6 +414,17 @@ body {
 		display: flex;
 		width: 100%;
 	}
+}
+
+.thankYouMessage {
+	font-family: "Amatic SC",
+		cursive;
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0;
+	margin-bottom: 10px;
+	color: #4e3921;
+	text-align: center;
 }
 
 @media screen and (min-width: 992px) {

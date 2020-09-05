@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ListItem = ({ item, openPopup }) => {
+const ListItem = ({ item, openPopup, setItem }) => {
 	const [colapsed, setColapsed] = useState(true);
 	const [buyDecision, setBuyDecision] = useState("BUY");
 	const [send, setSend] = useState(true);
@@ -38,9 +38,10 @@ const ListItem = ({ item, openPopup }) => {
 						<div className="areaBotao">
 							<button
 								className="botaoDarEsse"
-								onClick={() =>
-									colapsed ? setColapsed(false) : setColapsed(true)
-								}
+								onClick={() => {
+									colapsed ? setColapsed(false) : setColapsed(true);
+									setItem(item);
+								}}
 							>
 								Quero dar esse!
 							</button>
@@ -151,9 +152,10 @@ const ListItem = ({ item, openPopup }) => {
 						<div className="botoesDescricao">
 							<button
 								className="botaoDarOutro"
-								onClick={() =>
-									colapsed ? setColapsed(false) : setColapsed(true)
-								}
+								onClick={() => {
+									colapsed ? setColapsed(false) : setColapsed(true);
+									setItem(null);
+								}}
 							>
 								Vou escolher outro
 							</button>
