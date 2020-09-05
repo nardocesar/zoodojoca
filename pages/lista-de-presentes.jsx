@@ -32,15 +32,16 @@ const ListaDePresentesPage = ({ data, base_url }) => {
 			<main className="container">
 				{data
 					.sort((a, b) => {
-						if (a.ganho && !b.ganho) return 1;
-						if (!a.ganho && b.ganho) return -1;
-						if (a.ganho && b.ganho) return 0;
-						if (!a.ganho && !b.ganho) return 0;
-
 						if (a.nome > b.nome) return 1;
 						if (a.nome < b.nome) return -1;
 
 						return 0;
+					})
+					.sort((a, b) => {
+						if (a.ganho && !b.ganho) return 1;
+						if (!a.ganho && b.ganho) return -1;
+						if (a.ganho && b.ganho) return 0;
+						if (!a.ganho && !b.ganho) return 0;
 					})
 					.map((item, index) => {
 						return (
