@@ -56,7 +56,7 @@ const ListaDePresentesPage = ({ data, base_url }) => {
 	);
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const request = await fetch(`${process.env.BASE_URL}/api/presentes`);
 	const data = await request.json();
 	const base_url = process.env.BASE_URL;
