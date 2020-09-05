@@ -13,12 +13,9 @@ export default async (req, res) => {
 	const parsedBody = JSON.parse(body);
 
 	try {
-		await update('presentes', id, parsedBody)
+		const response = await update('presentes', id, parsedBody);
+		res.status(200).json(response);
 	} catch (error) {
 		res.status(500).json(error);
 	}
-
-	res.status(200).json({
-		success: true
-	});
 }

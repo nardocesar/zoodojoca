@@ -17,6 +17,8 @@ const ListaDePresentesPage = ({ listaDePresentes, base_url }) => {
 	useEffect(() => {
 		setLogged(sessionStorage.getItem("loggedIn") || "NO");
 
+		console.log(listaDePresentes);
+
 		if (logged === "NO") {
 			router.push("/");
 		}

@@ -21,9 +21,7 @@ const update = async (collection, id, body) => {
 			success: true
 		}
 	} catch (error) {
-		return {
-			success: false
-		}
+		throw new Error(error);
 	}
 };
 
