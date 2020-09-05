@@ -1,11 +1,26 @@
 import React, { useState } from "react";
 
-const ListItem = ({ item }) => {
+const ListItem = ({ item, openPopup }) => {
 	const [colapsed, setColapsed] = useState(true);
 	const [buyDecision, setBuyDecision] = useState("BUY");
 	const [send, setSend] = useState(true);
 
-	return (
+	return item.ganho ? (
+		<div className="retanguloDoItem ganho">
+			<div className="caixaDaFoto">
+				<figure>
+					<img src={item.imagem} />
+				</figure>
+			</div>
+			<div className="caixaDoConteudo">
+				<div className="itemDePresente">
+					<p className="nomeDoItem">{item.nome}</p>
+					<p className="valorDoItem">Valor Aproximado: R$ {item.preco}</p>
+					<h2>Ebaaa! Esse eu já ganhei</h2>
+				</div>
+			</div>
+		</div>
+	) : (
 		<div className={colapsed ? "retanguloDoItem" : "retanguloDoItem expanded"}>
 			{colapsed ? (
 				// FECHADO
@@ -144,9 +159,7 @@ const ListItem = ({ item }) => {
 							</button>
 							<button
 								className="botaoDeixaEsse"
-								onClick={() =>
-									colapsed ? setColapsed(false) : setColapsed(true)
-								}
+								onClick={() => openPopup(true)}
 							>
 								Deixa esse comigo!
 							</button>

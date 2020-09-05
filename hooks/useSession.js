@@ -1,10 +1,5 @@
-import {
-	useState,
-	useEffect
-} from 'react';
+const useSession = () => {
 
-export default () => {
-	const [logged, setLogged] = useState('');
-
-	setLogged(sessionStorage.getItem("loggedIn") || "NO");
 }
+
+export default useSession;

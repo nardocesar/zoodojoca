@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import fetch from "node-fetch";
 import { useRouter } from "next/router";
 
+import { usePopup } from "../hooks";
+
 import ListItem from "../components/item";
+import Popup from "../components/popup";
 
 const ListaDePresentesPage = ({ listaDePresentes }) => {
 	const router = useRouter();
+	const [open, setOpen] = usePopup();
 	const [logged, setLogged] = useState("");
 
 	useEffect(() => {
@@ -32,9 +36,11 @@ const ListaDePresentesPage = ({ listaDePresentes }) => {
 						return 0;
 					})
 					.map((item, index) => {
-						return <ListItem item={item} key={index} />;
+						return <ListItem item={item} key={index} openPopup={setOpen} />;
 					})}
 			</main>
+
+			{open ? <Popup openPopup={setOpen} /> : null}
 		</>
 	);
 };
