@@ -163,7 +163,7 @@ const ListItem = ({ item, openPopup, setItem }) => {
 								className="botaoDeixaEsse"
 								onClick={() => openPopup(true)}
 							>
-								Deixa esse comigo!
+								Pronto, comprado!
 							</button>
 						</div>
 					</div>
