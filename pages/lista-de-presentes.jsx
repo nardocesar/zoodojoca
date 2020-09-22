@@ -2,17 +2,23 @@ import React, { useState, useEffect } from "react";
 import fetch from "node-fetch";
 import { useRouter } from "next/router";
 
-import { usePopup, useItem } from "../hooks";
+import { usePopup, useConfirm, useItem } from "../hooks";
 
 import ListItem from "../components/item";
 import Popup from "../components/popup";
+import Confirm from "../components/confirm";
 
 const ListaDePresentesPage = ({ data, base_url }) => {
 	const router = useRouter();
-	const [open, setOpen] = usePopup();
+	const [openConfirm, setOpenConfirm] = useConfirm();
+	const [openPopup, setOpenPopup] = usePopup();
 	const [item, setItem] = useItem();
 
 	const [logged, setLogged] = useState("");
+
+	useEffect(() => {
+		if (openPopup) setOpenConfirm(false);
+	}, [openPopup]);
 
 	useEffect(() => {
 		setLogged(sessionStorage.getItem("loggedIn") || "NO");
@@ -48,15 +54,19 @@ const ListaDePresentesPage = ({ data, base_url }) => {
 							<ListItem
 								item={item}
 								key={index}
-								openPopup={setOpen}
+								openPopup={setOpenConfirm}
 								setItem={setItem}
 							/>
 						);
 					})}
 			</main>
 
-			{open ? (
-				<Popup base_url={base_url} item={item} openPopup={setOpen} />
+			{openConfirm ? (
+				<Confirm openPopup={setOpenPopup} closePopup={setOpenConfirm} />
+			) : null}
+
+			{openPopup ? (
+				<Popup base_url={base_url} item={item} openPopup={setOpenPopup} />
 			) : null}
 		</>
 	);
