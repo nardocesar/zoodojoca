@@ -1,89 +1,80 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import fetch from "node-fetch";
 import { useRouter } from "next/router";
 
-export default function Home({ base_url }) {
+import { usePopup, useConfirm, useItem } from "../hooks";
+
+import ListItem from "../components/item";
+import Popup from "../components/popup";
+import Confirm from "../components/confirm";
+
+const ListaDePresentesPage = ({ data, base_url }) => {
 	const router = useRouter();
-	const [password, setPassword] = useState("");
-	const [loading, setLoading] = useState(false);
-	const [error, setError] = useState("");
+	const [openConfirm, setOpenConfirm] = useConfirm();
+	const [openPopup, setOpenPopup] = usePopup();
+	const [item, setItem] = useItem();
 
-	const setState = (event) => {
-		setPassword(event.target.value);
-	};
+	const [logged, setLogged] = useState("");
 
-	const clearError = () => {
-		setError("");
-	};
+	useEffect(() => {
+		if (openPopup) setOpenConfirm(false);
+	}, [openPopup]);
 
-	const postPass = async () => {
-		const body = { password };
+	return logged === "NO" ? (
+		<p>Aguarde...</p>
+	) : (
+			<>
+				<figure className="headerLista">
+					<img src="header2.png" alt="Header do site" />
+				</figure>
+				<main className="container">
+					{data
+						.sort((a, b) => {
+							if (a.nome > b.nome) return 1;
+							if (a.nome < b.nome) return -1;
 
-		const response = await fetch(`${base_url}/api/auth`, {
-			method: "post",
-			body: JSON.stringify(body),
-		});
+							return 0;
+						})
+						.sort((a, b) => {
+							if (a.ganho && !b.ganho) return 1;
+							if (!a.ganho && b.ganho) return -1;
+							if (a.ganho && b.ganho) return 0;
+							if (!a.ganho && !b.ganho) return 0;
+						})
+						.map((item, index) => {
+							return (
+								<ListItem
+									item={item}
+									key={index}
+									openPopup={setOpenConfirm}
+									setItem={setItem}
+								/>
+							);
+						})}
+				</main>
 
-		const { message, status } = await response.json();
+				{openConfirm ? (
+					<Confirm openPopup={setOpenPopup} closePopup={setOpenConfirm} />
+				) : null}
 
-		return { message, status };
-	};
+				{openPopup ? (
+					<Popup base_url={base_url} item={item} openPopup={setOpenPopup} />
+				) : null}
+			</>
+		);
+};
 
-	const enterSite = async () => {
-		setLoading(true);
-		const { message, status } = await postPass();
-
-		setLoading(false);
-
-		if (status === "VALID") {
-			clearError();
-			sessionStorage.setItem("loggedIn", "YES");
-			router.push("/lista-de-presentes");
-		} else {
-			setError(message);
-		}
-	};
-
-	return (
-		<React.Fragment>
-			<h1 className="titulo">Zoológico do Joaquim</h1>
-			<main className="loginBox">
-				<input
-					type="password"
-					name="password"
-					id="pass"
-					name="password"
-					required
-					placeholder="Senha"
-					className="caixaSenha"
-					value={password}
-					onChange={setState}
-				/>
-				<button className="button" onClick={enterSite} disabled={loading}>
-					<i
-						className="loader"
-						style={{ display: loading ? "inline-block" : "none" }}
-					></i>
-					ENTRAR
-				</button>
-				<p className="passError" style={{ display: error ? "block" : "none" }}>
-					Senha incorreta. Tente novamente!
-				</p>
-			</main>
-			<img
-				className="animaisEntrada"
-				src="https://firebasestorage.googleapis.com/v0/b/zoo-do-joca.appspot.com/o/OBJECTS.png?alt=media&token=52c7955d-e91f-4c5a-bba9-e11298abf023"
-			></img>
-		</React.Fragment>
-	);
-}
-
-export async function getStaticProps() {
+export async function getServerSideProps() {
+	const request = await fetch(`${process.env.BASE_URL}/api/presentes`);
+	const data = await request.json();
 	const base_url = process.env.BASE_URL;
 
 	return {
 		props: {
+			data,
 			base_url,
 		},
 	};
 }
+
+export default ListaDePresentesPage;
